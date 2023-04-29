@@ -1,0 +1,70 @@
+body {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(/Class-April-23/First-Second_week/Labs/Clone-Lab/apple-pie/images/apple-pie.jpg); 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    font-size: 80px;
+
+}
+
+#image-desc{
+    height: 50px;
+}
+
+
+#description {
+margin-left: 20vh;
+margin-right: 20vh;
+text-align: center;
+display:block;
+border-bottom: 2px solid black;
+}
+
+p {
+    text-align: left;
+}
+
+#ingredients {
+margin-left: 20vh;
+margin-right: 20vh;
+text-align: left;
+border-bottom: 2px solid black;
+}   
+
+#ingredients li {
+    list-style:none
+}
+
+#image-ing {
+    height: 70px;
+}
+
+#div2 {
+    text-align: center;
+}
+
+#directions {
+margin-left: 20vh;
+margin-right: 20vh;
+text-align: left;
+display:block;
+}
+
+#directions li{
+    list-style: ;
+}
