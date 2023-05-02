@@ -9,7 +9,7 @@ for (let i = 0; i < arrayDeNumero.length; i++){ sumatotal += arrayDeNumero[i]
     }
     return sumatotal;
 };
-{ sumadeArrayDeNumsFlecha(numero) [console.log(numero[i])];}
+sumadeArrayDeNumsFlecha(numero)
 
 // const sumadeArrayDeNumsFlecha = (arrayDeNumero) => {
 //     let sumatotal = 0; 
