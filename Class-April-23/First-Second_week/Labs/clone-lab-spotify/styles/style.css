@@ -52,7 +52,7 @@ header img {
 /* banner zone */
 
 #image-banner {
-    height: 1100px;
+    height: 70rem;
     background-image: url(../images/landing.jpeg);
     background-size: cover;
     background-position: center center;
@@ -98,6 +98,7 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: center ;
+    height: 10rem;
 }
 
 .div-image {
@@ -112,5 +113,23 @@ h1 {
 #div-container p{
     color: rgb(78, 78, 78);
     font-weight: 200;
-    max-width: 200px;
+    max-width: 12rem;
+}
+
+
+#kanye {
+    background-color: #00B172;
+    display: flex;
+    margin: 3%;
+    height: 40rem;
+}
+
+.spotify-logo img{
+    width: 7rem;
+
+}
+
+.kanye-playlist img {
+    width: 20rem;
+    margin: 2rem;
 }
