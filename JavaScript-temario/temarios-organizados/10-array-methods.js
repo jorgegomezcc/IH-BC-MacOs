@@ -91,6 +91,7 @@ console.log(lessNum);
 
 // 8. includes()
 // Este método comprueba si un array incluye el elemento que pasa la condición, devolviendo true o false según corresponda.
+
 const includesTwo = everyArr.includes(200);
 console.log(includesTwo);
 
@@ -249,4 +250,4 @@ console.table(usingFillConstructor);
 
 // --------- Ejercicio 15 (reduce): ---------
 // Crea un array con números del 1 al 10. Utiliza el método .reduce() para sumar todos los números en el array.
-console.log(sum2); */
+// console.log(sum2);

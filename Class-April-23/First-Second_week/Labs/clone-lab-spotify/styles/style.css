@@ -116,20 +116,48 @@ h1 {
     max-width: 12rem;
 }
 
+/* Kanye zone */
+
 
 #kanye {
+    background-image: url(/Class-April-23/First-Second_week/Labs/clone-lab-spotify/images/spotify-icon-white.png);
+    background-size: 7rem;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #00B172;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 3%;
     height: 40rem;
 }
 
-.spotify-logo img{
-    width: 7rem;
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem 8rem 2rem 2rem;
+    font-weight: 300;
+}
 
+.spotlights h3 {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 0 0 1.5rem 0;
+
+}
+
+.spotlights h4 {
+    padding: 1rem 0;
+    font-weight: 600;
 }
 
 .kanye-playlist img {
     width: 20rem;
     margin: 2rem;
+    padding-left: 6rem;
 }
