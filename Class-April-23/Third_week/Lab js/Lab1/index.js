@@ -1,5 +1,5 @@
-var hacker1 = "Ana"
-var hacker2 = "Carlos"
+var hacker1 = "Jorge"
+var hacker2 = "Gabriel"
 
 // Iteración 1: Nombres y entradas
 

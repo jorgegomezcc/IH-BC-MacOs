@@ -115,19 +115,19 @@ const numeros1 = [2, 6, 9, 10, 7, 4, 1, 9]
   console.log(mediadenumeros(numeros1)); // 
 
 
-  const palabras1 = ['crab','poison','contagious','simple','bring','sharp','playground','poison','communion','simple','bring'];
+  const palabras = ['crab','poison','contagious','simple','bring','sharp','playground','poison','communion','simple','bring'];
 
   const arrayUnificacion = (palabras) => {
     if (palabras.length === 0) return null;
+
     let arraylimpio = [];
 
-    palabras.forEach(elemento); 
-        for (let i = 0; i < palabras.length; i ++) {
+    palabras.forEach((elemento) => {
+        for (let i = 0; i < palabras.length; i ++)
         if (!arraylimpio.includes(elemento)) {
             arraylimpio.push(elemento);
         }
         console.log(arraylimpio)
         return arraylimpio;
-    };
+    });
   }
-console.log(arrayUnificacion);
