@@ -24,15 +24,16 @@ body {
 /* Nav bar + logo */
 
 #navigation {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;  
+    position: fixed;
+    background-color: white;
     padding: 1rem 2rem;
 }
 
 nav ul {
+    float: right;
     display: flex;
     list-style: none;
+    padding-top: 1rem;
     gap: 1rem;
 }
 
@@ -43,10 +44,10 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     color: #00B172;
-}
+} 
 
 header img {
-    width: 12%;
+    width: 10%;
 }
 
 /* banner zone */
