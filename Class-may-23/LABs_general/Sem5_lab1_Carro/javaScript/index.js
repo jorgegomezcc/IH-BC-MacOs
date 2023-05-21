@@ -4,10 +4,8 @@ function updateSubtotal(product) {
 
     //variable para apuntar al precio
 let price = product.querySelector('.price span');
-
     //variable para apuntar a la cantidad de producto
 let quantity = product.querySelector (".quantity input");
-
     //variable para convertir lo que devuelve el precio en numero
 let priceValue = parseFloat(price.innerText);
 
@@ -20,7 +18,7 @@ let subTotalValue = priceValue * quantityValue;
     //variable para apuntar al subtotal y poder trabajar con el
 let subTotalContainer = product.querySelector(".subtotal span")
 
-    //llamamos a la variable anterior para añadirle un valir y que dicho valor sea el total de la operacion entre precio y cantidad
+    //llamamos a la variable anterior para añadirle un valor y que dicho valor sea el total de la operacion entre precio y cantidad
 subTotalContainer.innerText = subTotalValue;
 return subTotalValue
 
@@ -84,37 +82,43 @@ return subTotalValue
 
     //Segmentacion de data proporcionada por el usuario
     let elementRow = document.querySelector(".create-product");
-
     let newProdNameInput = elementRow.querySelector("input");
-
     let newProdNameValue = newProdNameInput.value;
+    console.log(newProdNameValue);
+    let newProdPriceInput = elementRow.querySelector("#input-price")
+    let newProdPriceValue = Number(newProdPriceInput.value).toFixed(2);
+    console.log(newProdPriceValue);
 
-    let newProdPriceInput = elementRow.querySelector(".input [type='number']")
-
-    let newProdPriceValue = Number
-    (newProdNameValue.value).toFixed(2);
-
+    //Creacion del elemento
 
     let newTablerow = document.createElement('tr');
-    newTablerow.classname = 'product'
-    newTablerow.innerText = `
-        <td class="name">
-        <span>${newProdNameValue}</span>
+    newTablerow.classList = "product";
+    newTablerow.innerHTML = `
+    <td class="name">
+      <span>${newProdNameValue}</span>
     </td>
-    <td class="price">
-    $
-    <span>${newProdPriceValue}</span>
-    </td>
+    <td class="price">$<span>${newProdPriceValue}</span></td>
     <td class="quantity">
-        <input type="number" value="0" min="0" placeholder="Quantity" />
+      <input type="number" value="0" min="0" placeholder="Quantity" />
     </td>
     <td class="subtotal">$<span>0</span></td>
     <td class="action">
-        <button class="btn btn-remove">Remove</button>
+      <button class="btn btn-remove">Remove</button>
     </td>
-`
+  `
+        //parte 3
 
+    let parentCont = document.querySelector("#cart tbody");
+    parentCont.appendChild(newTablerow);
 
+        //parte 4
+
+    let removeBtn = newTablerow.querySelector(".btn-remove");
+    removeBtn.addEventListener("click", removeProduct);
+
+        //parte 5
+    newProdNameInput.value = '';
+    newProdPriceInput.value = 0;
 
   }
   
@@ -139,4 +143,4 @@ return subTotalValue
 
   let createBtn = document.querySelector("#create");
 
-  createBtn.addEventListener("click", removeProduct)
+  createBtn.addEventListener("click", createProduct);
