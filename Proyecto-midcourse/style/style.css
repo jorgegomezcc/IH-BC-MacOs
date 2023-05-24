@@ -106,4 +106,19 @@ body {
 
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 
-/* Your CSS code goes here */
+#scrollBtn {
+    background-color: black;
+    color: white;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+#scrollBtn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
